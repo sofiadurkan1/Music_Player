@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b78e5896d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="top-bar">
+            <button onclick="sidebar()" ><i class="fas fa-chevron-right"></i></button>
+            <div class="options">
+                <button><i class="fas fa-music"></i></button>
+                <button><i class="fas fa-volume-down"></i></button>
+                <button><i class="fas fa-edit"></i></button>
+
+            </div>
+            <button onclick="open_p()"><i class="fas fa-bars"></i></button>
+
+        </div>
+
+        <div class="playingpart">
+            <div class="img">
+                <img src="./images/BerensMusicPlayer.jpg" alt="img">
+
+            </div>
+        </div>
+        <div class="control_part">
+            <div class="song_title">
+                <p>song title</p>
+                <p>artist name</p>
+
+            </div>
+            <div class="control_buttons">
+                <div class="range_slider">
+                    <input type="range" min="0" max="100" id="slider" value="0">
+                    <p>3:00</p>
+                </div>
+                <div class="main_btns">
+                    <button id="previous"><i class="fas fa-backward"></i></button>
+                    <button id="play_btn"><i class="fas fa-play"></i></button>
+                    <button id="previous"><i class="fas fa-forward"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="playlist">
+            <div class="p_song">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button><i class="fas fa-play"></i></button>
+            </div>
+            <div class="p_song">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button ><i class="fas fa-play"></i></button>
+            </div>
+            <div class="p_song">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button ><i class="fas fa-play"></i></button>
+            </div>
+            <div class="p_song">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button ><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
